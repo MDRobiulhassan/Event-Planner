@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('ibrahim-boran-m8YjB0noWiY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navbar{
+    margin: 0 10px;
+}
+
+.navbar-brand{
+    font-family: cursive;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar ul{
+    text-align: center;
+}
+
+.btn{
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+main{
+    color: white;
+    padding: 5% 7%;
+    line-height: 1.6em;
+    font-size: large;
+}
