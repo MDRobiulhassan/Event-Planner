@@ -1,17 +1,25 @@
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('al-elmes-ULHxWq8reao-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('al-elmes-ULHxWq8reao-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
 }
 
-.navbar{
-    margin: 0 10px;
+body a:hover {
+    color: teal;
+    transition: 1s;
 }
 
-.navbar-brand{
+body .btn:hover {
+    color: teal;
+    transition: 1s;
+}
+
+.navbar-brand {
     font-family: cursive;
 }
 
@@ -20,18 +28,40 @@ body {
     font-weight: bolder;
 }
 
-.navbar ul{
+.navbar ul {
     text-align: center;
 }
 
-.btn{
+.btn {
     border-radius: 20px;
     font-weight: bold;
 }
 
-main{
+main {
     color: white;
     padding: 5% 7%;
     line-height: 1.6em;
-    font-size: large;
+    position: fixed;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+}
+
+.social-icons .fb i:hover {
+    color: #1877F2;
+    transition: 1s;
+}
+
+.social-icons .ins i:hover {
+    color: #E4405F;
+    transition: 1s;
+}
+
+.social-icons .ld i:hover {
+    color: #0A66C2;
+    transition: 1s;
 }
