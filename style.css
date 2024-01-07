@@ -1,9 +1,10 @@
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('ibrahim-boran-m8YjB0noWiY-unsplash.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('al-elmes-ULHxWq8reao-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    background-attachment: fixed; 
 }
 
 .navbar{
