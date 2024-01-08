@@ -41,13 +41,17 @@ main {
     color: white;
     padding: 5% 7%;
     line-height: 1.6em;
-    position: fixed;
+    /* position: fixed; */
+}
+
+.event-photo img {
+    border-radius: 10px;
 }
 
 footer {
     color: white;
-    position: absolute;
-    bottom: 1%;
+    /* position: absolute; */
+    /* bottom: 3%; */
     width: 100%;
 }
 
@@ -64,4 +68,11 @@ footer {
 .social-icons .ld i:hover {
     color: #0A66C2;
     transition: 1s;
+}
+
+@media (max-width: 576px) {
+    .navbar-dark .collapse,.d-flex {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+    }
 }
