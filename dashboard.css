@@ -12,9 +12,8 @@ header {
     margin: 0 15px;
 }
 
-hr,.divider {
-    border-color: white; 
-    border-width: 2px;
+.divider{
+    border: 1px solid white;
 }
 
 .user-icon-link i {
@@ -34,6 +33,17 @@ hr,.divider {
     cursor: pointer;
 }
 
-.dotted {
+.inset {
     border-top: 2px inset #fff;
+}
+
+.btn{
+    display: inline;
+    /* border-radius: 20px; */
+    margin-right: 8px;
+}
+
+.btn:hover{
+    transition: 1s;
+    color: black;
 }
