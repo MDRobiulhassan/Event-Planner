@@ -8,11 +8,15 @@ body {
     color: white;
 }
 
+.navbar-brand:hover {
+    color: white;
+}
+
 header {
     margin: 0 15px;
 }
 
-.divider{
+.divider {
     border: 1px solid white;
 }
 
@@ -37,13 +41,13 @@ header {
     border-top: 2px inset #fff;
 }
 
-.btn{
+.btn {
     display: inline;
     /* border-radius: 20px; */
     margin-right: 8px;
 }
 
-.btn:hover{
+.btn:hover {
     transition: 1s;
     color: black;
 }
