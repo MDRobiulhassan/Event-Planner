@@ -49,6 +49,11 @@ main {
     border-radius: 10px;
 }
 
+/* .col-md-6 {
+    max-width: 300px;
+} */
+
+
 footer {
     color: white;
     /* position: absolute; */
@@ -71,8 +76,9 @@ footer {
     transition: 1s;
 }
 
-@media (max-width: 576px) {
-    .navbar-dark .collapse,.d-flex {
+@media (max-width: 990px){
+
+    .navbar-dark .collapse{
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 10px;
     }
