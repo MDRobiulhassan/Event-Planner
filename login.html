@@ -9,7 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="login.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                         Login to ARSW INC
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form onsubmit="return validateForm()" action="dashboard.html">
                             <div class="form-group">
                                 <label for="email">Email address :</label>
                                 <input type="email" class="form-control" id="email" required>
@@ -30,16 +30,11 @@
                                 <label for="password">Password :</label>
                                 <input type="password" class="form-control" id="password" required>
                             </div>
-                            <a href="dashboard.html" class="btn btn-primary btn-block mb-2 mt-4">Login</a>
-                            <!-- <button type="submit" class="btn btn-primary btn-block mb-2 mt-4">Login</button> -->
-                            <!-- <hr> -->
+                            <button type="submit" class="btn btn-primary btn-block mb-2 mt-4">Login</button>
                             <div class="or-text text-center mb-2">or</div>
                             <a href="https://myaccount.google.com/" class="btn btn-danger btn-block">
                                 <i class="fa fa-google"></i> Login with Google
                             </a>
-                            <!-- <button type="button" class="btn btn-danger btn-block">
-                                <i class="fa fa-google"></i> Login with Google
-                            </button> -->
                             <div class="forgot-password mt-2 text-center text-white">
                                 <a href="#">Forgot Password?</a>
                             </div>
@@ -49,7 +44,7 @@
             </div>
         </div>
         <footer class="text-center mt-4">
-            <h5 class="font-weight-bold">2024 &copy; Robiul Hassan </h5>
+            <h5 class="font-weight-bold">2024 &copy; Robiul Hassan</h5>
         </footer>
     </div>
 

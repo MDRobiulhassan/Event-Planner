@@ -2,7 +2,6 @@ body {
     background-color: #799296;
 }
 
-
 .navbar-brand {
     font-family: cursive;
     color: white;
@@ -32,8 +31,8 @@ header {
 }
 
 .user:hover {
-    /* transition: 2s; */
-    background-color: #dcdcdc;
+    /* transition: 2s;
+    background-color: #dcdcdc; */
     cursor: pointer;
 }
 

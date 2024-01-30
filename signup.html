@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="login.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                         Sign Up for ARSW INC
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form onsubmit="return validatesignupForm()" action="dashboard.html">
                             <div class="form-group">
                                 <label for="email">Email address :</label>
                                 <input type="email" class="form-control" id="email" required>
@@ -33,15 +34,11 @@
                                 <label for="confirmPassword">Confirm Password :</label>
                                 <input type="password" class="form-control" id="confirmPassword" required>
                             </div>
-                            <!-- <button type="submit" class="btn btn-primary btn-block mb-2 mt-4">Sign Up</button> -->
-                            <a href="dashboard.html" class="btn btn-primary btn-block mb-2 mt-4">Sign up</a>
+                            <button type="submit" class="btn btn-primary btn-block mb-2 mt-4">Sign up</button>
                             <div class="or-text text-center mb-2">or</div>
                             <a href="google-login.html" class="btn btn-danger btn-block">
                                 <i class="fa fa-google"></i> Sign up with Google
                             </a>
-                            <!-- <button type="button" class="btn btn-danger btn-block">
-                                <i class="fa fa-google"></i> Sign Up with Google
-                            </button> -->
                         </form>
                     </div>
                 </div>
