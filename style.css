@@ -66,8 +66,12 @@ footer {
     transition: 1s;
 }
 
-.social-icons .ins i:hover {
-    color: #E4405F;
+.social-icons .gm i:hover {
+    color: red;
+    transition: 1s;
+}
+.social-icons .gb i:hover {
+    color: black;
     transition: 1s;
 }
 
