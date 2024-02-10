@@ -25,8 +25,8 @@ body .btn:hover {
     text-align: center;
 }
 
-.btn {
-    border-radius: 20px;
+nav .btn {
+    border-radius: 100px;
     font-weight: bold;
 }
 

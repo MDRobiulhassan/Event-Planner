@@ -23,8 +23,8 @@
                     <div class="card-body">
                         <form onsubmit="return validatesignupForm()" action="dashboard.html">
                             <div class="form-group">
-                                <label for="email">Name :</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <label for="text">Name :</label>
+                                <input type="text" class="form-control" id="text" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email address :</label>
@@ -52,6 +52,45 @@
             <h5 class="font-weight-bold">2024 &copy; Robiul Hassan </h5>
         </footer>
     </div>
+
+    <script>
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            var name = document.getElementById('text').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Create a JSON object with form data
+            var formData = {
+                "name": name,
+                "email": email,
+                "password": password,
+                "confirmPassword": confirmPassword
+            };
+
+            // Log form data as JSON to the console
+            console.log("Form Data:", formData);
+
+            // Reset input fields
+            document.getElementById('text').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('password').value = "";
+            document.getElementById('confirmPassword').value = "";
+
+            // Redirect to dashboard.html
+            window.location.href = 'dashboard.html';
+        }
+
+        // Attach handleSubmit function to the form's submit event
+        document.querySelector('form').addEventListener('submit', handleSubmit);
+    </script>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
